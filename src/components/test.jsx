@@ -8,6 +8,7 @@ function Testone(){
   useEffect(() => {
     const listnames = JSON.parse(localStorage.getItem('tasks')) || [] ;
     settask(listnames);
+    console.log(listnames);
   },[]);
 
   useEffect(() => {
